@@ -17,8 +17,10 @@ nextBtn.addEventListener("click", function displayNextPrime() {
 });
 
 previousBtn.addEventListener("click", function displayPreviousPrime() {
+  if (currentIndex !== 0) {
     currentIndex -= 1;
     primeNumber.innerText = primeArray[currentIndex];
+  }
 })
 
 function isPrimeNumber(currentNumber) {
